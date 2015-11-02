@@ -15,3 +15,7 @@ input1 = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 for x in ['a','b','c','f','g','h','i','j','k','l','m','n','o','p','r','s','t','u','v','w','x','y','z']:
     if x == str(input1):
         print("Did not understand command, try again.")
+        
+if str(input1) == 'q':
+    print("Goodbye!")
+
