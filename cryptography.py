@@ -20,5 +20,5 @@ while input1 != 'q':
         elif input1 == 'e':
             message = input("Message: ")
 
-if str(input1) == 'q':
+if input1 == 'q':
     print("Goodbye!")
