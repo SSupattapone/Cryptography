@@ -18,7 +18,13 @@ while input1 != 'q':
             print("Did not understand command, try again.")
             input1 = input("Enter e to encrypt, d to decrypt, or q to quit: ")
         elif input1 == 'e':
-            message = input("Message: ")
+            message1 = input("Message: ")
+            key1 = input("Key: ")
+            input1 = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+        elif input1 == 'd':
+            message2 = input("Message: ")
+            key2 = input("Key: ")
+            input1 = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 if input1 == 'q':
     print("Goodbye!")
