@@ -20,4 +20,3 @@ while str(input1) != 'q':
 
 if str(input1) == 'q':
     print("Goodbye!")
-
