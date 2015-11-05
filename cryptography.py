@@ -20,6 +20,19 @@ while input1 != 'q':
         elif input1 == 'e':
             message1 = input("Message: ")
             key1 = input("Key: ")
+            
+            
+            msgnums = []
+            for c in message1:
+                msgnums.append(associations.find(c))
+            
+            keynums = []
+            for c in key1:
+                keynums.append(associations.find(c))
+            
+            print(msgnums + keynums)
+            
+            
             input1 = input("Enter e to encrypt, d to decrypt, or q to quit: ")
         elif input1 == 'd':
             message2 = input("Message: ")
