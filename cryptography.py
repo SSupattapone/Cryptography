@@ -30,7 +30,7 @@ while input1 != 'q':
             for c in key1:
                 keynums.append(associations.find(c))
             
-            for x in msgnums and y in keynums:
+            for x,y in zip(msgnums,keynums):
                 print(x + y)
             
             
