@@ -19,7 +19,7 @@ while input1 != 'q':
             input1 = input("Enter e to encrypt, d to decrypt, or q to quit: ")
         elif input1 == 'e':
             message1 = input("Message: ")
-            key1 = input("Key: ")
+            key1 = (str(input("Key: ")))*count(message1)
             
             
             msgnums = []
