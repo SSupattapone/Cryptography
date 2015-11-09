@@ -52,11 +52,10 @@ while input1 != 'q':
                 keynums2.append(associations.find(c))
             
             for x,y in zip(msgnums2,keynums2):
-                if (x - y) => 0:
+                if x - y >= 0:
                     print(associations[x - y], end="")
                 else:
-                    (x - y) = (x - y) + 87
-                    print(associations[x - y], end="")
+                    print(associations[x - y + 87], end="")
 
             print()
             
