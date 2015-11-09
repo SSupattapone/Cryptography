@@ -45,14 +45,18 @@ while input1 != 'q':
             
             msgnums2 = []
             for c in message2:
-                msgnums.append(associations.find(c))
+                msgnums2.append(associations.find(c))
             
             keynums2 = []
             for c in key2:
-                keynums.append(associations.find(c))
+                keynums2.append(associations.find(c))
             
             for x,y in zip(msgnums2,keynums2):
-                print(associations[x - y], end="")
+                if (x - y) => 0:
+                    print(associations[x - y], end="")
+                else:
+                    (x - y) = (x - y) + 87
+                    print(associations[x - y], end="")
 
             print()
             
