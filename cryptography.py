@@ -32,7 +32,7 @@ while input1 != 'q':
                 keynums.append(associations.find(c))
             
             for x,y in zip(msgnums,keynums):
-                print(associations[x + y], end=" ")
+                print(associations[x + y], end="")
             
             
             input1 = input("Enter e to encrypt, d to decrypt, or q to quit: ")
