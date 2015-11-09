@@ -9,7 +9,7 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
+associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 input1 = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 while input1 != 'q':
@@ -20,7 +20,7 @@ while input1 != 'q':
         elif input1 == 'e':
             message1 = input("Message: ")
             key1 = input("Key: ")
-            key1 = 'key1'*(len(message1) / len(key1))
+            key1 = list(key1)*(len(message1) / len(key1))
             
             
             msgnums = []
