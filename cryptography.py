@@ -23,15 +23,15 @@ while input1 != 'q':
             key1 = list(key1)*(len(message1) / len(key1))
             
             
-            msgnums = []
+            msgnums1 = []
             for c in message1:
                 msgnums.append(associations.find(c))
             
-            keynums = []
+            keynums1 = []
             for c in key1:
                 keynums.append(associations.find(c))
             
-            for x,y in zip(msgnums,keynums):
+            for x,y in zip(msgnums1,keynums1):
                 print(associations[x + y], end="")
 
             print()
@@ -41,6 +41,21 @@ while input1 != 'q':
         elif input1 == 'd':
             message2 = input("Message: ")
             key2 = input("Key: ")
+            key2 = list(key2)*(len(message2) / len(key2))
+            
+            msgnums2 = []
+            for c in message2:
+                msgnums.append(associations.find(c))
+            
+            keynums2 = []
+            for c in key2:
+                keynums.append(associations.find(c))
+            
+            for x,y in zip(msgnums2,keynums2):
+                print(associations[x - y], end="")
+
+            print()
+            
             input1 = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 if input1 == 'q':
