@@ -25,11 +25,11 @@ while input1 != 'q':
             
             msgnums1 = []
             for c in message1:
-                msgnums.append(associations.find(c))
+                msgnums1.append(associations.find(c))
             
             keynums1 = []
             for c in key1:
-                keynums.append(associations.find(c))
+                keynums1.append(associations.find(c))
             
             for x,y in zip(msgnums1,keynums1):
                 print(associations[x + y], end="")
