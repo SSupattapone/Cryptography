@@ -20,7 +20,7 @@ while input1 != 'q':
         elif input1 == 'e':
             message1 = input("Message: ")
             key1 = input("Key: ")
-            key1 = list(key1)*(len(message1) / len(key1))
+            key1 = list(key1)*((len(message1) // len(key1)) + 1)
             
             
             msgnums1 = []
@@ -41,7 +41,7 @@ while input1 != 'q':
         elif input1 == 'd':
             message2 = input("Message: ")
             key2 = input("Key: ")
-            key2 = list(key2)*(len(message2) / len(key2))
+            key2 = list(key2)*((len(message2) // len(key2)))+1
             
             msgnums2 = []
             for c in message2:
