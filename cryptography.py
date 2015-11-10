@@ -55,7 +55,7 @@ while input1 != 'q':
                 if x - y >= 0:
                     print(associations[x - y], end="")
                 else:
-                    print(associations[x - y + 87], end="")
+                    print(associations[x - y + 85], end="")
 
             print()
             
